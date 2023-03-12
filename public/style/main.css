@@ -45,6 +45,7 @@ body:after {
   top: 0;
   bottom: 0;
   z-index: -1;
+  background: url(/stars/public/image/bg-1920x1280.jpg) no-repeat center/cover;
 }
 
 @keyframes color_change {

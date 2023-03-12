@@ -112,11 +112,11 @@ nav.active {
 
 @media screen and (min-width: 992px) {
   nav {
-    background-color: $bg;
+    background-color: #0D142500;
     width: 15vw;
     min-width: 150px;
     &.active {
-      background-color: $bg;
+      background-color: #0D142500;
       padding: 20px;
       .title {
         img.logo {

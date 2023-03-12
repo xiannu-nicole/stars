@@ -143,6 +143,7 @@ export default {
     width: 10vw;
     top: 50px;
     flex-direction: column;
+    background: #0D142500;
     li {
       width: 100%;
       margin-bottom: 40px;

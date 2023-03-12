@@ -140,6 +140,7 @@ nav.active {
       top: 20px;
       width: fit-content;
       height: 100vh;
+      background: #0D142500;
       li a {
         margin: 0;
         line-height: 20px;

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&family=RocknRoll+One&display=swap");
+.show-enter {
+  opacity: 0;
+}
+
+.show-enter-active {
+  transition: all 2s;
+}
+
+.show-enter-to {
+  opacity: 1;
+}
+
+html {
+  font-size: 24px;
+}
+
+* {
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 300;
+  transition: all 0.4s;
+  color: #fff;
+}
+*.is-load {
+  opacity: 0;
+  transition: all 1s;
+}
+*.is-load.show {
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  background-color: #0D1425;
+  position: relative;
+  overflow-x: hidden;
+}
+body:after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url(../image/bg-1920x1280.jpg) no-repeat center/cover;
+}
+
+@keyframes color_change {
+  0% {
+    background-position: 0% 17%;
+  }
+  50% {
+    background-position: 100% 84%;
+  }
+  100% {
+    background-position: 0% 17%;
+  }
+}
+h1, h2, h3, h4 {
+  line-height: 1.5;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 120px auto 200px;
+}
+
+.item {
+  margin-bottom: 60px;
+}
+.item img {
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 60px;
+}
+.item .text {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1882352941);
+  backdrop-filter: blur(3px);
+  padding: 40px;
+  border-radius: 20px;
+}
+.item .text h3 {
+  text-align: center;
+  color: #FBFD88;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    width: 60vw;
+  }
+  .item .text {
+    width: 70%;
+    padding: 50px;
+  }
+}/*# sourceMappingURL=main.css.map */

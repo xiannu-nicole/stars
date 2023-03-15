@@ -113,7 +113,7 @@ export default {
     <!-- 進度條 -->
     <div id="progress-box">
       <div id="progress-color">
-        <img src="../public/image/top.png" alt="" />
+        <img src="/stars/public/image/top.png" alt="" />
       </div>
     </div>
     <!-- 開場 -->

@@ -113,7 +113,7 @@ export default {
     <!-- 進度條 -->
     <div id="progress-box">
       <div id="progress-color">
-        <img src="/stars/public/image/top.png" alt="" />
+        <img src="../public/image/top.png" alt="" />
       </div>
     </div>
     <!-- 開場 -->
@@ -219,6 +219,9 @@ export default {
   border: 1px solid #ffffff;
   &.active {
     display: block;
+    width: 95%;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
   #progress-color {
     position: relative;
@@ -231,8 +234,8 @@ export default {
     img {
       position: absolute;
       top: -2.8rem;
-      width: 90px;
-      height: 90px;
+      width: 60px;
+      height: 60px;
       transform: rotate(90deg);
       animation: rocket 3s infinite;
       z-index: 1;
@@ -242,24 +245,24 @@ export default {
 
 @keyframes rocket {
   0% {
-    top: -1.8rem;
-    right: -2.5rem;
+    top: -1.7rem;
+    right: -2.2rem;
   }
   25% {
     top: -2.1rem;
-    right: -2.3rem;
+    right: -2rem;
   }
   50% {
-    top: -1.8rem;
-    right: -2.5rem;
+    top: -1.7rem;
+    right: -2.2rem;
   }
   75% {
-    top: -1.6rem;
-    right: -2.3rem;
+    top: -1.3rem;
+    right: -2rem;
   }
   100% {
-    top: -1.8rem;
-    right: -2.5rem;
+    top: -1.7rem;
+    right: -2.2rem;
   }
 }
 
@@ -337,5 +340,42 @@ export default {
       }
     }
   }
+}
+@media (min-width:992px) {
+  #progress-box {
+    &.active {
+    display: block;
+    width: 100%;
+  }
+  #progress-color {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+  @keyframes rocket {
+  0% {
+    top: -2.6rem;
+    right: -2.2rem;
+  }
+  25% {
+    top: -3.1rem;
+    right: -2rem;
+  }
+  50% {
+    top: -2.6rem;
+    right: -2.2rem;
+  }
+  75% {
+    top: -2.1rem;
+    right: -2rem;
+  }
+  100% {
+    top: -2.6rem;
+    right: -2.2rem;
+  }
+}
+
 }
 </style>

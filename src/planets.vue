@@ -164,6 +164,7 @@ export default {
     }
     &:hover {
       bottom: 30px;
+    transform: translateX(50%) rotate(0);
       cursor: pointer;
     }
     &.back {

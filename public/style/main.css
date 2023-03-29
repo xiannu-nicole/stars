@@ -32,6 +32,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   background-color: #0D1425;
   position: relative;
@@ -98,7 +99,7 @@ ul {
   width: 90%;
   background: rgba(255, 255, 255, 0.1882352941);
   backdrop-filter: blur(3px);
-  padding: 40px;
+  padding: 20px;
   border-radius: 20px;
 }
 .item .text h3 {

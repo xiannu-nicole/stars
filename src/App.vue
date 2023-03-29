@@ -46,7 +46,7 @@ export default {
     <transition name="show">
       <router-view v-if="isRouterAlive"></router-view>
     </transition>
-    <copyRight></copyRight>
+    <!-- <copyRight></copyRight> -->
   </div>
 </template>
 
